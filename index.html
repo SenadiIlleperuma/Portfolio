@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Senadi Illeperuma | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand">
+      <div class="logo">SI</div>
+
+      <div>
+        <h3>Senadi Illeperuma</h3>
+        <p>Data Engineering & UI/UX Enthusiast</p>
+      </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-image">
+      <div class="image-circle">
+        <img src="assets/pic.jpeg" alt="Senadi Illeperuma profile photo" />
+      </div>
+
+      <div class="status">
+        <span></span>
+        Ready to build
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="section-tag">HELLO, I'M</p>
+
+      <h1>Senadi Illeperuma</h1>
+
+      <h2>Data Engineering & UI/UX Enthusiast</h2>
+
+      <p class="hero-desc">
+        Final-year Computer Science student combining a background in UI/UX
+        architecture with hands-on enterprise data analytics. I specialize in
+        designing high-fidelity layouts in Figma and building optimized data
+        visualization tools that connect workflows with strategy.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="assets/cv.pdf" target="_blank" class="btn primary">
+          <i class="fa-regular fa-file-lines"></i>
+          View CV
+        </a>
+
+        <a href="#contact" class="btn secondary">
+          Contact Info
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section about" id="about">
+    <div class="about-left">
+      <p class="section-tag">GET TO KNOW MORE</p>
+
+      <h2>About Me</h2>
+
+      <p>
+        Passionate about transforming user flows into delightful design layouts
+        and managing enterprise analytics workflows. Currently wrapping up my
+        Computer Science honors degree, my final-year coursework focused on
+        user research paradigms, applied machine learning, and human-computer
+        interactions. I aim to create interfaces that are not only beautiful
+        but driven by precise performance requirements and usability testing.
+      </p>
+
+      <div class="about-card">
+        <h3>Are you looking for a designer with strong technical roots?</h3>
+        <p>
+          My academic and internship track lets me map product design assets,
+          formulate custom schemas, and bridge communication gaps with software teams.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-right">
+      <div class="info-card">
+        <div class="icon pink">
+          <i class="fa-solid fa-award"></i>
+        </div>
+
+        <div>
+          <p>WORK HISTORY</p>
+          <h3>Experience</h3>
+          <span>Part-Time UI/UX Designer at BYLO Pvt Ltd</span>
+          <span>MIS Intern at Jay Jay Mills Lanka (Pvt) Ltd</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="icon blue">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <div>
+          <p>ACADEMIC</p>
+          <h3>Education</h3>
+          <span>BSc (Hons) in Computer Science</span>
+          <span>Informatics Institute of Technology / University of Westminster London</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section skills" id="skills">
+    <div class="center-title">
+      <p class="section-tag">EXPLORE MY</p>
+      <h2>Industry Skills</h2>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="frontend">Frontend & Design</button>
+      <button class="tab" data-tab="backend">Backend Development</button>
+      <button class="tab" data-tab="data">Data Warehousing</button>
+    </div>
+
+    <div class="skills-content active" id="frontend">
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-layer-group"></i> Interface Architecture</h3>
+
+        <div class="skill">
+          <div>
+            <span>Figma UI/UX</span>
+            <span>Experienced</span>
+          </div>
+          <div class="bar pink-bar"><span style="width: 95%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>Wireframing & Prototyping</span>
+            <span>Experienced</span>
+          </div>
+          <div class="bar pink-bar"><span style="width: 90%"></span></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-mobile-screen"></i> Mobile Engineering</h3>
+
+        <div class="skill">
+          <div>
+            <span>React Native</span>
+            <span>Experienced</span>
+          </div>
+          <div class="bar blue-bar"><span style="width: 85%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>HTML/CSS</span>
+            <span>Experienced</span>
+          </div>
+          <div class="bar blue-bar"><span style="width: 95%"></span></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-terminal"></i> Client Scripts</h3>
+
+        <div class="skill">
+          <div>
+            <span>JavaScript & ES6</span>
+            <span>Experienced</span>
+          </div>
+          <div class="bar cyan-bar"><span style="width: 90%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>React.js Framework</span>
+            <span>Basic</span>
+          </div>
+          <div class="bar cyan-bar"><span style="width: 60%"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-content" id="backend">
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-terminal"></i> Logic Languages</h3>
+
+        <div class="skill">
+          <div>
+            <span>Python Scripting</span>
+            <span>Experienced</span>
+          </div>
+          <div class="bar green-bar"><span style="width: 85%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>Java Programming</span>
+            <span>Basic</span>
+          </div>
+          <div class="bar green-bar"><span style="width: 60%"></span></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-code-branch"></i> Code Shipping</h3>
+
+        <div class="skill">
+          <div>
+            <span>Git & GitHub Workflows</span>
+            <span>Basic</span>
+          </div>
+          <div class="bar gray-bar"><span style="width: 70%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>Vercel Deployments</span>
+            <span>Basic</span>
+          </div>
+          <div class="bar gray-bar"><span style="width: 65%"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-content" id="data">
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-database"></i> Relational Queries</h3>
+
+        <div class="skill">
+          <div>
+            <span>SQL Structuring</span>
+            <span>Basic</span>
+          </div>
+          <div class="bar purple-bar"><span style="width: 70%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>PostgreSQL DB</span>
+            <span>Basic</span>
+          </div>
+          <div class="bar purple-bar"><span style="width: 60%"></span></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-chart-column"></i> Corporate Dashboards</h3>
+
+        <div class="skill">
+          <div>
+            <span>Power BI Visuals</span>
+            <span>Basic</span>
+          </div>
+          <div class="bar orange-bar"><span style="width: 70%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>Apache NiFi ETL Flow</span>
+            <span>Basic</span>
+          </div>
+          <div class="bar orange-bar"><span style="width: 65%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section projects" id="projects">
+    <div class="project-heading">
+      <div>
+        <p class="section-tag">BROWSE MY RECENT</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-tabs">
+        <button class="project-filter active" data-filter="all">All</button>
+        <button class="project-filter" data-filter="uiux">UI/UX Prototyping</button>
+        <button class="project-filter" data-filter="analytics">Analytics</button>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card" data-category="analytics">
+        <div class="card-top">
+          <span>Research Project</span>
+          <p>2026</p>
+        </div>
+
+        <h3>"ElderlyLN" Platform</h3>
+
+        <p>
+          Trilingual mobile platform matching families with verified Sri Lankan
+          caregivers. Achieved 92.86% predictive accuracy using a custom
+          Logistic Regression model.
+        </p>
+
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY" target="_blank">
+          Preview Study
+        </a>
+      </div>
+
+      <div class="project-card" data-category="uiux">
+        <div class="card-top">
+          <span class="pink-label">Figma Layout</span>
+          <p>2025</p>
+        </div>
+
+        <h3>BYLO E-Commerce</h3>
+
+        <p>
+          Designed user-friendly checkout paths and clean desktop-responsive UI
+          frameworks to reduce transactional drop-offs on business pages.
+        </p>
+
+        <a href="https://www.figma.com/" target="_blank">
+          Preview Study
+        </a>
+      </div>
+
+      <div class="project-card" data-category="uiux">
+        <div class="card-top">
+          <span class="purple-label">Cake Platform</span>
+          <p>2023</p>
+        </div>
+
+        <h3>Sugar Rush Cakes</h3>
+
+        <p>
+          A high-fidelity Figma showcase providing visual cupcake ordering
+          experiences alongside integrated customizing tools for clients.
+        </p>
+
+        <a href="https://www.figma.com/" target="_blank">
+          Preview Study
+        </a>
+      </div>
+
+      <div class="project-card" data-category="uiux">
+        <div class="card-top">
+          <span class="green-label">HCI Design</span>
+          <p>2023</p>
+        </div>
+
+        <h3>FOODIESPOT Recipe</h3>
+
+        <p>
+          Recipe search layout engineered using accessibility tools. Highlighted
+          layout configurations, contrast constraints, and user navigation panels.
+        </p>
+
+        <a href="https://www.figma.com/" target="_blank">
+          Preview Study
+        </a>
+      </div>
+
+      <div class="project-card" data-category="uiux">
+        <div class="card-top">
+          <span class="orange-label">App Prototyping</span>
+          <p>2024</p>
+        </div>
+
+        <h3>Burger Ordering</h3>
+
+        <p>
+          Interactive high-fidelity fast food mockups implementing custom layout
+          tabs, food selection sheets, and interactive order summaries.
+        </p>
+
+        <a href="https://www.figma.com/" target="_blank">
+          Preview Study
+        </a>
+      </div>
+
+      <div class="project-card" data-category="analytics">
+        <div class="card-top">
+          <span class="blue-label">Cross-Platform Dev</span>
+          <p>2024</p>
+        </div>
+
+        <h3>Vehicle Repairo</h3>
+
+        <p>
+          Group development of web and mobile service scheduler using React
+          Native and Python backend. Structured database workflows to track
+          booking status.
+        </p>
+
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY" target="_blank">
+          Preview Study
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="section experience" id="experience">
+    <div class="center-title">
+      <p class="section-tag">CHRONOLOGY</p>
+      <h2>Professional Path</h2>
+    </div>
+
+    <div class="timeline-wrapper">
+      <div class="timeline-column">
+        <h3><i class="fa-solid fa-briefcase"></i> Corporate Experience</h3>
+
+        <div class="timeline-item">
+          <span>Nov 2024 - Mar 2025</span>
+
+          <h4>Part-Time UI/UX Designer</h4>
+          <h5>BYLO Private Ltd.</h5>
+
+          <p>
+            Formulated desktop interfaces and responsive layouts optimized to
+            increase user checkout transaction velocity. Mapped user navigation
+            pipelines within Figma aligned with client design briefs.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span>Jul 2024 - Jun 2025</span>
+
+          <h4>MIS Intern</h4>
+          <h5>Jay Jay Mills Lanka (Pvt) Ltd</h5>
+
+          <p>
+            Engineered real-time performance tracking portals. Structured
+            automated ETL frameworks parsing operational ticket data into
+            interactive Power BI dashboards.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-column">
+        <h3><i class="fa-solid fa-graduation-cap"></i> Academic Background</h3>
+
+        <div class="timeline-item">
+          <span>Jan 2023 - Present</span>
+
+          <h4>BSc (Hons) in Computer Science</h4>
+          <h5>Informatics Institute of Technology</h5>
+
+          <p>
+            Affiliated with University of Westminster, UK. Immersive training
+            across systems architecture, database management, human-computer
+            interaction, cyber security, and applied intelligence models.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span>2022 - 2023</span>
+
+          <h4>Foundation Certificate in Computing</h4>
+          <h5>Informatics Institute of Technology</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact" id="contact">
+    <div class="contact-info">
+      <p class="section-tag">GET IN TOUCH</p>
+
+      <h2>Contact Me</h2>
+
+      <p>
+        I am currently planning for my next industry opportunity inside UI/UX
+        Design, Business Analysis, or product management. Let's discuss
+        requirements gathering or design strategy!
+      </p>
+
+      <div class="contact-line">
+        <i class="fa-regular fa-envelope"></i>
+        <span>illeperuma.indu@gmail.com</span>
+      </div>
+
+      <div class="contact-line">
+        <i class="fa-solid fa-phone"></i>
+        <span>0765344017</span>
+      </div>
+
+      <div class="contact-line">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Colombo, Sri Lanka</span>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <div class="form-row">
+        <div>
+          <label>Your Name</label>
+          <input type="text" required />
+        </div>
+
+        <div>
+          <label>Your Email</label>
+          <input type="email" required />
+        </div>
+      </div>
+
+      <label>Subject</label>
+      <input type="text" required />
+
+      <label>Message</label>
+      <textarea rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
