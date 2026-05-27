@@ -242,11 +242,19 @@ a {
   align-items: center;
   justify-content: center;
   gap: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, opacity 0.3s;
 }
 
 .primary {
   background: var(--blue);
   color: white;
+}
+
+.primary:hover {
+  background: var(--accent);
+  opacity: 0.95;
 }
 
 .secondary {
@@ -600,13 +608,19 @@ a {
   font-size: 17px;
 }
 
-/* CONTACT */
+/* CONTACT WITH ALIGNED DYNAMIC LAYOUTS */
 
 .contact {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: stretch; /* Forces both grid items to match the height of the tallest item */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-line {
@@ -622,59 +636,47 @@ a {
   color: var(--blue);
 }
 
-.contact-form {
+.contact-callout-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
   background: var(--card);
-  border: 1px solid var(--card-border);
-  padding: 40px;
+  border: 2px dashed var(--card-border);
   border-radius: 24px;
   box-shadow: 0 20px 45px var(--shadow);
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 22px;
-}
-
-label {
-  display: block;
-  color: var(--muted);
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 4px;
-  margin: 18px 0 10px;
-  font-size: 13px;
-}
-
-input,
-textarea {
   width: 100%;
-  padding: 17px;
-  background: var(--input);
-  color: var(--text);
-  border: 1px solid var(--card-border);
-  border-radius: 14px;
-  outline: none;
-  font-size: 16px;
 }
 
-textarea {
-  resize: vertical;
+.callout-icon {
+  font-size: 48px;
+  color: var(--accent);
+  margin-bottom: 24px;
 }
 
-.contact-form button {
-  width: 100%;
-  margin-top: 26px;
-  padding: 18px;
-  border: none;
-  border-radius: 14px;
-  background: var(--blue);
-  color: white;
-  text-transform: uppercase;
+.contact-callout-card h3 {
+  font-size: 24px;
   font-weight: 800;
-  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.contact-callout-card p {
   font-size: 15px;
-  cursor: pointer;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 32px;
+  max-width: 400px;
+}
+
+.callout-btn {
+  width: 100%;
+  max-width: 320px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 /* TABLET RESPONSIVE */
@@ -707,6 +709,10 @@ textarea {
   .project-heading {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .contact-callout-card {
+    padding: 40px;
   }
 }
 
@@ -802,15 +808,9 @@ textarea {
 
   .skill-card,
   .project-card,
-  .contact-form,
   .info-card,
   .about-card {
     padding: 24px;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-    gap: 0;
   }
 
   .tabs,
